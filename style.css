@@ -1,0 +1,428 @@
+```css
+/* =========================================
+   BASE
+   ========================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                 Roboto, Arial, sans-serif;
+
+    background: #f5f1e8;
+    color: #26332d;
+
+    min-height: 100vh;
+}
+
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+.header {
+    text-align: center;
+    padding: 30px 20px 20px;
+}
+
+.logo-circle {
+    width: 70px;
+    height: 70px;
+
+    margin: 0 auto 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #315c4b;
+    color: white;
+
+    font-size: 32px;
+
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.header h1 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.subtitle {
+    margin-top: 6px;
+
+    font-size: 14px;
+    color: #718078;
+}
+
+
+/* =========================================
+   NAVIGATION
+   ========================================= */
+
+.navigation {
+    display: flex;
+
+    gap: 8px;
+
+    padding: 10px 16px 16px;
+
+    overflow-x: auto;
+
+    scrollbar-width: none;
+
+    position: sticky;
+    top: 0;
+
+    background: rgba(245, 241, 232, 0.94);
+
+    backdrop-filter: blur(10px);
+
+    z-index: 10;
+}
+
+.navigation::-webkit-scrollbar {
+    display: none;
+}
+
+.nav-item {
+    flex: 0 0 auto;
+
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    padding: 10px 14px;
+
+    border-radius: 30px;
+
+    background: white;
+
+    color: #405049;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.nav-item span {
+    font-size: 16px;
+}
+
+.nav-item.active {
+    background: #315c4b;
+    color: white;
+}
+
+
+/* =========================================
+   HORIZONTAL PAGES
+   ========================================= */
+
+.pages {
+    display: flex;
+
+    overflow-x: auto;
+
+    scroll-snap-type: x mandatory;
+
+    scrollbar-width: none;
+
+    width: 100%;
+
+    overscroll-behavior-x: contain;
+}
+
+.pages::-webkit-scrollbar {
+    display: none;
+}
+
+.page {
+    flex: 0 0 100%;
+
+    min-height: calc(100vh - 180px);
+
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    scroll-snap-align: start;
+}
+
+
+/* =========================================
+   CARDS
+   ========================================= */
+
+.card {
+    width: 100%;
+    max-width: 500px;
+
+    background: white;
+
+    border-radius: 24px;
+
+    padding: 28px 22px;
+
+    box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.07);
+}
+
+.home-page {
+    align-items: center;
+}
+
+.welcome-card {
+    text-align: center;
+}
+
+.big-icon {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.section-icon {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.card h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.description {
+    color: #718078;
+    line-height: 1.6;
+    margin-bottom: 22px;
+}
+
+.hint {
+    margin-top: 25px;
+
+    font-size: 13px;
+    line-height: 1.6;
+
+    color: #89958f;
+}
+
+
+/* =========================================
+   FORMULAIRE
+   ========================================= */
+
+.presence-form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+.presence-form label {
+    margin-top: 10px;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.presence-form input {
+    width: 100%;
+
+    padding: 15px;
+
+    border: 1px solid #dce2de;
+
+    border-radius: 12px;
+
+    font-size: 16px;
+
+    outline: none;
+}
+
+.presence-form input:focus {
+    border-color: #315c4b;
+}
+
+.presence-form button {
+    margin-top: 18px;
+
+    padding: 15px;
+
+    border: none;
+    border-radius: 14px;
+
+    background: #315c4b;
+    color: white;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+/* =========================================
+   LISTES
+   ========================================= */
+
+.lesson-list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.lesson {
+    display: flex;
+    flex-direction: column;
+
+    padding: 16px;
+
+    border-radius: 14px;
+
+    background: #f4f7f4;
+
+    color: #26332d;
+
+    text-decoration: none;
+}
+
+.lesson strong {
+    font-size: 16px;
+}
+
+.lesson span {
+    margin-top: 4px;
+
+    color: #718078;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   HADITH
+   ========================================= */
+
+.hadith {
+    margin-top: 20px;
+
+    padding: 20px;
+
+    border-radius: 16px;
+
+    background: #f4f7f4;
+}
+
+.hadith-title {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.arabic {
+    direction: rtl;
+
+    font-size: 24px;
+
+    line-height: 2;
+
+    text-align: center;
+
+    margin: 15px 0;
+}
+
+.translation {
+    line-height: 1.7;
+
+    text-align: center;
+
+    font-style: italic;
+}
+
+.source {
+    margin-top: 15px;
+
+    text-align: right;
+
+    font-size: 12px;
+
+    color: #718078;
+}
+
+
+/* =========================================
+   DOUAA
+   ========================================= */
+
+.douaa {
+    margin-top: 15px;
+
+    padding: 18px;
+
+    border-radius: 16px;
+
+    background: #f4f7f4;
+}
+
+.douaa h3 {
+    font-size: 16px;
+
+    margin-bottom: 10px;
+}
+
+.douaa p:last-child {
+    color: #596760;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+footer {
+    text-align: center;
+
+    padding: 20px;
+
+    color: #89958f;
+
+    font-size: 12px;
+}
+
+
+/* =========================================
+   PETITS ÉCRANS
+   ========================================= */
+
+@media (max-width: 380px) {
+
+    .header {
+        padding-top: 20px;
+    }
+
+    .card {
+        padding: 22px 18px;
+    }
+
+    .page {
+        padding: 14px;
+    }
+
+}
+```
