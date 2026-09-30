@@ -1,9 +1,302 @@
+```html
 <!DOCTYPE html>
-<html>
-    <head>
-        <!-- head definitions go here -->
-    </head>
-    <body>
-        <!-- the content goes here -->
-    </body>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f5f1e8">
+
+    <title>Association - Cours</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- En-tête -->
+    <header class="header">
+        <div class="logo">
+            <div class="logo-circle">☪</div>
+            <h1>Mon Association</h1>
+        </div>
+
+        <p class="subtitle">
+            Apprendre · Comprendre · Progresser
+        </p>
+    </header>
+
+
+    <!-- Navigation horizontale -->
+    <nav class="navigation">
+
+        <a href="#accueil" class="nav-item active">
+            <span>⌂</span>
+            Accueil
+        </a>
+
+        <a href="#presence" class="nav-item">
+            <span>📝</span>
+            Présence
+        </a>
+
+        <a href="#cours" class="nav-item">
+            <span>📚</span>
+            Cours
+        </a>
+
+        <a href="#surats" class="nav-item">
+            <span>📖</span>
+            Surats
+        </a>
+
+        <a href="#hadiths" class="nav-item">
+            <span>🕌</span>
+            Hadiths
+        </a>
+
+        <a href="#douaa" class="nav-item">
+            <span>🤲</span>
+            Douaa
+        </a>
+
+    </nav>
+
+
+    <!-- Contenu qui défile horizontalement -->
+    <main class="pages">
+
+
+        <!-- ACCUEIL -->
+        <section id="accueil" class="page home-page">
+
+            <div class="card welcome-card">
+
+                <div class="big-icon">☪</div>
+
+                <h2>Bienvenue 👋</h2>
+
+                <p>
+                    Bienvenue sur l'espace des cours.
+                </p>
+
+                <p class="hint">
+                    Faites glisser votre doigt vers la gauche
+                    pour découvrir les différentes rubriques.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- PRESENCE -->
+        <section id="presence" class="page">
+
+            <div class="card">
+
+                <div class="section-icon">📝</div>
+
+                <h2>Fiche de présence</h2>
+
+                <p class="description">
+                    Indique ton nom et ton prénom pour confirmer
+                    ta présence au cours.
+                </p>
+
+                <form class="presence-form">
+
+                    <label for="nom">Nom</label>
+                    <input
+                        type="text"
+                        id="nom"
+                        name="nom"
+                        placeholder="Ton nom"
+                    >
+
+                    <label for="prenom">Prénom</label>
+                    <input
+                        type="text"
+                        id="prenom"
+                        name="prenom"
+                        placeholder="Ton prénom"
+                    >
+
+                    <button type="submit">
+                        Je suis présent(e)
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+        <!-- COURS -->
+        <section id="cours" class="page">
+
+            <div class="card">
+
+                <div class="section-icon">📚</div>
+
+                <h2>Cours</h2>
+
+                <p class="description">
+                    Retrouve ici les différents cours.
+                </p>
+
+                <div class="lesson-list">
+
+                    <a href="#" class="lesson">
+                        <strong>Cours 1</strong>
+                        <span>Introduction</span>
+                    </a>
+
+                    <a href="#" class="lesson">
+                        <strong>Cours 2</strong>
+                        <span>Vocabulaire</span>
+                    </a>
+
+                    <a href="#" class="lesson">
+                        <strong>Cours 3</strong>
+                        <span>Lecture</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SURATS -->
+        <section id="surats" class="page">
+
+            <div class="card">
+
+                <div class="section-icon">📖</div>
+
+                <h2>Surats</h2>
+
+                <p class="description">
+                    Les surats étudiées pendant les cours.
+                </p>
+
+                <div class="lesson-list">
+
+                    <a href="#" class="lesson">
+                        <strong>Al-Fatiha</strong>
+                        <span>سورة الفاتحة</span>
+                    </a>
+
+                    <a href="#" class="lesson">
+                        <strong>Al-Ikhlas</strong>
+                        <span>سورة الإخلاص</span>
+                    </a>
+
+                    <a href="#" class="lesson">
+                        <strong>Al-Falaq</strong>
+                        <span>سورة الفلق</span>
+                    </a>
+
+                    <a href="#" class="lesson">
+                        <strong>An-Nas</strong>
+                        <span>سورة الناس</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- HADITHS -->
+        <section id="hadiths" class="page">
+
+            <div class="card">
+
+                <div class="section-icon">🕌</div>
+
+                <h2>Hadiths</h2>
+
+                <div class="hadith">
+
+                    <p class="hadith-title">
+                        Hadith du jour
+                    </p>
+
+                    <p class="arabic">
+                        إِنَّمَا الأَعْمَالُ بِالنِّيَّاتِ
+                    </p>
+
+                    <p class="translation">
+                        « Les actes ne valent que par leurs intentions. »
+                    </p>
+
+                    <p class="source">
+                        — Rapporté par Al-Bukhari et Muslim
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- DOUAA -->
+        <section id="douaa" class="page">
+
+            <div class="card">
+
+                <div class="section-icon">🤲</div>
+
+                <h2>Douaa</h2>
+
+                <p class="description">
+                    Quelques invocations à apprendre.
+                </p>
+
+                <div class="douaa">
+
+                    <h3>Avant de manger</h3>
+
+                    <p class="arabic">
+                        بِسْمِ اللهِ
+                    </p>
+
+                    <p>
+                        Au nom d'Allah.
+                    </p>
+
+                </div>
+
+                <div class="douaa">
+
+                    <h3>Avant de dormir</h3>
+
+                    <p class="arabic">
+                        بِاسْمِكَ اللَّهُمَّ أَمُوتُ وَأَحْيَا
+                    </p>
+
+                    <p>
+                        C'est en Ton nom, ô Allah, que je meurs et que je vis.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>© Mon Association</p>
+    </footer>
+
+</body>
 </html>
+```
