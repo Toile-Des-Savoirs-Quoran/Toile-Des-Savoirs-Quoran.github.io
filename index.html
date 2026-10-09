@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -14,7 +13,7 @@
 
 <body>
 
-    <!-- En-tête -->
+    <!-- EN-TÊTE -->
     <header class="header">
 
         <div class="logo">
@@ -35,7 +34,7 @@
     </header>
 
 
-    <!-- Navigation horizontale -->
+    <!-- NAVIGATION HORIZONTALE -->
     <nav class="navigation">
 
         <a href="#accueil" class="nav-item active">
@@ -43,9 +42,9 @@
             Accueil
         </a>
 
-        <a href="#presence" class="nav-item">
+        <a href="#devoirs" class="nav-item">
             <span>📝</span>
-            Présence
+            Devoirs
         </a>
 
         <a href="#cours" class="nav-item">
@@ -71,7 +70,7 @@
     </nav>
 
 
-    <!-- Contenu qui défile horizontalement -->
+    <!-- CONTENU DES PAGES -->
     <main class="pages">
 
 
@@ -98,45 +97,37 @@
         </section>
 
 
-        <!-- PRESENCE -->
-        <section id="presence" class="page">
+        <!-- DEVOIRS -->
+        <section id="devoirs" class="page">
 
             <div class="card">
 
                 <div class="section-icon">📝</div>
 
-                <h2>Fiche de présence</h2>
+                <h2>Devoirs</h2>
 
                 <p class="description">
-                    Indique ton nom et ton prénom pour confirmer
-                    ta présence au cours.
+                    Retrouve ici les devoirs à faire pour le prochain cours.
                 </p>
 
-                <form class="presence-form">
+                <div class="lesson-list">
 
-                    <label for="nom">Nom</label>
+                    <!-- DEVOIR 1 -->
+                    <div class="lesson">
 
-                    <input
-                        type="text"
-                        id="nom"
-                        name="nom"
-                        placeholder="Ton nom"
-                    >
+                        <strong>Devoir 1 — 11/10/2026</strong>
 
-                    <label for="prenom">Prénom</label>
+                        <span>
+                            Mémoriser la sourate Al-Mulk
+                        </span>
 
-                    <input
-                        type="text"
-                        id="prenom"
-                        name="prenom"
-                        placeholder="Ton prénom"
-                    >
+                        <span>
+                            📅 Délai : 2 semaines
+                        </span>
 
-                    <button type="submit">
-                        Je suis présent(e)
-                    </button>
+                    </div>
 
-                </form>
+                </div>
 
             </div>
 
@@ -158,7 +149,7 @@
 
                 <div class="lesson-list">
 
-                    <!-- Cours 1 -->
+                    <!-- COURS 1 -->
                     <a
                         href="https://github.com/Toile-Des-Savoirs-Quoran/Toile-Des-Savoirs-Quoran.github.io/blob/7e7cbdc3f3f246a7f592b56c395f5954bb87297b/Cours1-Al-Fatiha.pdf"
                         class="lesson"
@@ -170,7 +161,7 @@
                     </a>
 
 
-                    <!-- Ahkam tajwid -->
+                    <!-- AHKAM TAJWID -->
                     <a
                         href="https://github.com/Toile-Des-Savoirs-Quoran/Toile-Des-Savoirs-Quoran.github.io/blob/e7d8d8e6d0685b389e9b2afb7816c17b3fe10366/ahkam-tajwid.png"
                         class="lesson"
@@ -312,6 +303,7 @@
     </main>
 
 
+    <!-- PIED DE PAGE -->
     <footer>
 
         <p>
@@ -323,4 +315,4 @@
 </body>
 
 </html>
-```
+
