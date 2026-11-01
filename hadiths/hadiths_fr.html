@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>20 hadiths sahih</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #f2f7f5;
+  --paper: #ffffff;
+  --ink: #17343b;
+  --muted: #5b7378;
+  --line: #d8e5e1;
+  --c0: #2f9e8f;
+  --c1: #e8a33d;
+  --c2: #4a90c2;
+  --c3: #d9677a;
+  --ar-font: "Amiri", "Noto Naskh Arabic", "Scheherazade New", "Traditional Arabic", "Geeza Pro", serif;
+  --lat-font: "Nunito", "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--lat-font);
+  font-size: 1.05rem;
+  line-height: 1.55;
+}
+header.top {
+  text-align: center;
+  padding: 3rem 1.2rem 2rem;
+  background: var(--ink);
+  color: #fff;
+  border-bottom: 8px solid var(--c1);
+}
+header.top .bismillah {
+  font-family: var(--ar-font);
+  font-size: clamp(1.6rem, 5vw, 2.4rem);
+  line-height: 2;
+  color: var(--c1);
+  margin: 0;
+}
+header.top h1 {
+  margin: .2rem 0 .3rem;
+  font-size: clamp(1.7rem, 5vw, 2.6rem);
+  font-weight: 800;
+}
+header.top .ar-title {
+  font-family: var(--ar-font);
+  font-size: clamp(1.5rem, 4.5vw, 2.1rem);
+  line-height: 2;
+  margin: 0;
+}
+header.top .sub { margin: .6rem auto 0; max-width: 40rem; color: #c5d8d4; }
+main {
+  max-width: 54rem;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+  display: grid;
+  gap: 1.6rem;
+}
+.hadith {
+  --accent: var(--c0);
+  position: relative;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-inline-start: 10px solid var(--accent);
+  border-radius: 6px 18px 18px 6px;
+  padding: 1.4rem 1.4rem 1.2rem 4.2rem;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+.hadith.c0 { --accent: var(--c0); }
+.hadith.c1 { --accent: var(--c1); }
+.hadith.c2 { --accent: var(--c2); }
+.hadith.c3 { --accent: var(--c3); }
+.num {
+  position: absolute;
+  top: 1.1rem; left: 1rem;
+  width: 2.4rem; height: 2.4rem;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 800;
+  display: grid; place-items: center;
+}
+.ar {
+  margin: 0 0 1rem;
+  padding: .6rem 1rem;
+  background: color-mix(in srgb, var(--accent) 10%, white);
+  border-radius: 12px;
+  font-family: var(--ar-font);
+  font-size: clamp(1.7rem, 4.6vw, 2.3rem);
+  line-height: 2.3;
+  text-align: right;
+  unicode-bidi: isolate;
+  font-feature-settings: "liga" 1, "calt" 1, "mark" 1, "mkmk" 1;
+}
+.ph, .fr, .tr, .refs { margin: .35rem 0; }
+.ph { color: var(--muted); font-style: italic; }
+.fr { font-weight: 600; }
+.tag {
+  display: inline-block;
+  min-width: 6.4rem;
+  margin-inline-end: .5rem;
+  font-size: .78rem;
+  font-weight: 800;
+  font-style: normal;
+  color: var(--accent);
+}
+.off { margin: .2rem 0 0; font-size: .92rem; }
+.off a { margin-right: .9rem; color: var(--ink); font-weight: 600; text-underline-offset: 3px; }
+.off a:hover, .off a:focus-visible { color: var(--accent); }
+.grade { margin: .2rem 0 0; font-size: .92rem; color: var(--muted); }
+.grade.weak { color: #a2552a; }
+.refs { margin-top: .7rem; padding-top: .6rem; border-top: 1px dashed var(--line); }
+.ref {
+  display: inline-block;
+  margin: .15rem .35rem .15rem 0;
+  padding: .1rem .7rem;
+  border-radius: 999px;
+  background: var(--ink);
+  color: #fff;
+  font-size: .85rem;
+  font-weight: 600;
+}
+footer {
+  text-align: center;
+  padding: 0 1rem 2.5rem;
+  color: var(--muted);
+  font-size: .9rem;
+}
+@media (max-width: 560px) {
+  .hadith { padding: 3.6rem 1rem 1rem 1rem; }
+  .num { top: .9rem; left: .9rem; }
+  .tag { display: block; min-width: 0; margin-bottom: .1rem; }
+}
+@media print {
+  body { background: #fff; font-size: 11pt; }
+  header.top { background: #fff; color: var(--ink); border-bottom: 3px solid var(--c1); padding: 1rem; }
+  header.top .sub { color: var(--muted); }
+  main { gap: 1rem; padding: 1rem 0; }
+  .hadith { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .ref { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<header class="top">
+  <p class="bismillah" lang="ar" dir="rtl">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+  <h1>20 hadiths sahih</h1>
+  <p class="ar-title" lang="ar" dir="rtl">أَحَادِيثُ صَحِيحَةٌ</p>
+  <p class="sub">Arabe, prononciation en français et traduction française, avec la référence de chaque hadith.</p>
+</header>
+<main>
+  <article class="hadith c0">
+    <div class="num" aria-hidden="true">1</div>
+    <p class="ar" lang="ar" dir="rtl">إِنَّمَا الأَعْمَالُ بِالنِّيَّاتِ، وَإِنَّمَا لِكُلِّ امْرِئٍ مَا نَوَى</p>
+    <p class="ph" lang="fr"><span class="tag">Prononciation</span>Innamal a&#x27;mâlou bin-niyyât, wa innamâ li-koulli imri&#x27;in mâ nawâ</p>
+    <p class="fr" lang="fr"><span class="tag">Français</span>Les actions ne valent que par les intentions, et chacun aura selon ce qu&#x27;il a eu l&#x27;intention de faire.</p>
+    <p class="refs"><span class="tag">Référence</span><span class="ref">Bukhari 1</span><span class="ref">Muslim 1907</span></p>
+    <p class="off"><span class="tag">Traduction officielle</span><a href="https://hadeethenc.com/fr/browse/hadith/66511" target="_blank" rel="noopener">Voir en français</a></p>
+    <p class="grade"><span class="tag">Authenticité</span>Sahih — Bukhari et Muslim</p>
+  </article>
+  <article class="hadith c1">
+    <div class="num" aria-hidden="true">2</div>
+    <p class="ar" lang="ar" dir="rtl">لَا يُؤْمِنُ أَحَدُكُمْ حَتَّى يُحِبَّ لِأَخِيهِ مَا يُحِبُّ لِنَفْسِهِ</p>
+    <p class="ph" lang="fr"><span class="tag">Prononciation</span>Lâ you&#x27;minou ahadoukoum hattâ youhibba li-akhîhi mâ youhibbou li-nafsih</p>
+    <p class="fr" lang="fr"><span class="tag">Français</span>Aucun de vous ne croit vraiment tant qu&#x27;il n&#x27;aime pas pour son frère ce qu&#x27;il aime pour lui-même.</p>
+    <p class="refs"><span class="tag">Référence</span><span class="ref">Bukhari 13</span><span class="ref">Muslim 45</span></p>
+    <p class="off"><span class="tag">Traduction officielle</span><a href="https://hadeethenc.com/fr/browse/hadith/4717" target="_blank" rel="noopener">Voir en français</a></p>
+    <p class="grade"><span class="tag">Authenticité</span>Sahih — Bukhari et Muslim</p>
+  </article>
+  <article class="hadith c2">
+    <div class="num" aria-hidden="true">3</div>
+    <p class="ar" lang="ar" dir="rtl">الْمُسْلِمُ مَنْ سَلِمَ الْمُسْلِمُونَ مِنْ لِسَانِهِ وَيَدِهِ</p>
+    <p class="ph" lang="fr"><span class="tag">Prononciation</span>Al-mouslimou man salimal-mouslimoûna min lisânihi wa yadih</p>
+    <p class="fr" lang="fr"><span class="tag">Français</span>Le musulman est celui dont les autres musulmans sont à l&#x27;abri de sa langue et de sa main.</p>
+    <p class="refs"><span class="tag">Référence</span><span class="ref">Bukhari 10</span><span class="ref">Muslim 40</span></p>
+    <p class="off"><span class="tag">Traduction officielle</span><a href="https://hadeethenc.com/fr/browse/hadith/10101" target="_blank" rel="noopener">Voir en français</a></p>
+    <p class="grade"><span class="tag">Authenticité</span>Sahih — Bukhari et Muslim</p>
+  </article>
+  <article class="hadith c3">
+    <div class="num" aria-hidden="true">4</div>
+    <p class="ar" lang="ar" dir="rtl">لَيْسَ الشَّدِيدُ بِالصُّرَعَةِ، إِنَّمَا الشَّدِيدُ الَّذِي يَمْلِكُ نَفْسَهُ عِنْدَ الْغَضَبِ</p>
+    <p class="ph" lang="fr"><span class="tag">Prononciation</span>Laysash-shadîdou bis-souraa&#x27;a, innamash-shadîdou alladhî yamlikou nafsahou &#x27;indal-ghadab</p>
+    <p class="fr" lang="fr"><span class="tag">Français</span>Le fort n&#x27;est pas celui qui terrasse les gens, mais celui qui se maîtrise lorsqu&#x27;il est en colère.</p>
+    <p class="refs"><span class="tag">Référence</span><span class="ref">Bukhari 6114</span><span class="ref">Muslim 2609</span></p>
+    <p class="off"><span class="tag">Traduction officielle</span><a href="https://hadeethenc.com/fr/browse/hadith/5351" target="_blank" rel="noopener">Voir en français</a></p>
+    <p class="grade"><span class="tag">Authenticité</span>Sahih — Bukhari et Muslim</p>
+  </article>
+  <article class="hadith c0">
+    <div class="num" aria-hidden="true">5</div>
+    <p class="ar" lang="ar" dir="rtl">خَيْرُكُمْ مَنْ تَعَلَّمَ الْقُرْآنَ وَعَلَّمَهُ</p>
+    <p class="ph" lang="fr"><span class="tag">Prononciation</span>Khayroukoum man ta&#x27;allamal-Qour&#x27;âna wa &#x27;allamah</p>
+    <p class="fr" lang="fr"><span class="tag">Français</span>Le meilleur d&#x27;entre vous est celui qui apprend le Coran et l&#x27;enseigne.</p>
+    <p class="refs"><span class="tag">Référence</span><span class="ref">Bukhari 5027</span></p>
+    <p class="off"><span class="tag">Traduction officielle</span><a href="https://hadeethenc.com/fr/browse/hadith/5913" target="_blank" rel="noopener">Voir en français</a></p>
+    <p class="grade"><span class="tag">Authenticité</span>Sahih — Bukhari</p>
+  </article>
+  <article class="hadith c1">
+    <div class="num" aria-hidden="true">6</div>
+    <p class="ar" lang="ar" dir="rtl">مَنْ أَحَقُّ النَّاسِ بِحُسْنِ صَحَابَتِي؟ قَالَ: أُمُّكَ، ثُمَّ أُمُّكَ، ثُمَّ أُمُّكَ، ثُمَّ أَبُوكَ</p>
+    <p class="ph" lang="fr"><span class="tag">Prononciation</span>Man ahaqqoun-nâsi bi-housni sahâbatî ? Qâla : oummouk, thouma oummouk, thouma oummouk, thouma abouk</p>
+    <p class="fr" lang="fr"><span class="tag">Français</span>Qui mérite le plus ma bonne compagnie ? Il dit : « Ta mère, puis ta mère, puis ta mère, puis ton père. »</p>
+    <p class="refs"><span class="tag">Référence</span><span class="ref">Bukhari 5971</span><span class="ref">Muslim 2548</span></p>
+    <p class="off"><span class="tag">Traduction officielle</span><a href="https://hadeethenc.com/fr/browse/hadith/4182" target="_blank" rel="noopener">Voir en français</a></p>
+    <p class="grade"><span class="tag">Authenticité</span>Sahih — Bukhari et Muslim</p>
+  </article>
+  <article class="hadith c2">
+    <div class="num" aria-hidden="true">7</div>
+    <p class="ar" lang="ar" dir="rtl">آيَةُ الْمُنَافِقِ ثَلَاثٌ: إِذَا حَدَّثَ كَذَبَ، وَإِذَا وَعَدَ أَخْلَفَ، وَإِذَا اؤْتُمِنَ خَانَ</p>
+    <p class="ph" lang="fr"><span class="tag">Prononciation</span>Âyatoul-mounâfiqi thalâth : idhâ haddatha kadhab, wa idhâ wa&#x27;ada akhlaf, wa idhâ-&#x27;toumina khân</p>
+    <p class="fr" lang="fr"><span class="tag">Français</span>Les signes de l&#x27;hypocrite sont trois : quand il parle, il ment ; quand il promet, il manque à sa promesse ; quand on lui confie quelque chose, il trahit.</p>
+    <p class="refs"><span class="tag">Référence</span><span class="ref">Bukhari 33</span><span class="ref">Muslim 59</span></p>
+    <p class="off"><span class="tag">Traduction officielle</span><a href="https://hadeethenc.com/fr" target="_blank" rel="noopener">Encyclopédie (FR)</a></p>
+    <p class="grade"><span class="tag">Authenticité</span>Sahih — Bukhari et Muslim</p>
+  </article>
+  <article class="hadith c3">
+    <div class="num" aria-hidden="true">8</div>
+    <p class="ar" lang="ar" dir="rtl">مَنْ لَا يَرْحَمِ النَّاسَ لَا يَرْحَمْهُ اللَّهُ</p>
+    <p class="ph" lang="fr"><span class="tag">Prononciation</span>Man lâ yarhamin-nâsa lâ yarhamouhoullâh</p>
+    <p class="fr" lang="fr"><span class="tag">Français</span>Celui qui n&#x27;est pas miséricordieux envers les gens, Allah ne sera pas miséricordieux envers lui.</p>
+    <p class="refs"><span class="tag">Référence</span><span class="ref">Bukhari 7376</span><span class="ref">Muslim 2319</span></p>
+    <p class="off"><span class="tag">Traduction officielle</span><a href="https://hadeethenc.com/fr" target="_blank" rel="noopener">Encyclopédie (FR)</a></p>
+    <p class="grade"><span class="tag">Authenticité</span>Sahih — Bukhari et Muslim</p>
+  </article>
+  <article class="hadith c0">
+    <div class="num" aria-hidden="true">9</div>
+    <p class="ar" lang="ar" dir="rtl">الطُّهُورُ شَطْرُ الْإِيمَانِ</p>
+    <p class="ph" lang="fr"><span class="tag">Prononciation</span>At-touhoûrou shatroul-îmân</p>
+    <p class="fr" lang="fr"><span class="tag">Français</span>La propreté est la moitié de la foi.</p>
+    <p class="refs"><span class="tag">Référence</span><span class="ref">Muslim 223</span></p>
+    <p class="off"><span class="tag">Traduction officielle</span><a href="https://hadeethenc.com/fr" target="_blank" rel="noopener">Encyclopédie (FR)</a></p>
+    <p class="grade"><span class="tag">Authenticité</span>Sahih — Muslim</p>
+  </article>
+  <article class="hadith c1">
+    <div class="num" aria-hidden="true">10</div>
+    <p class="ar" lang="ar" dir="rtl">وَتُمِيطُ الْأَذَى عَنِ الطَّرِيقِ صَدَقَةٌ</p>
+    <p class="ph" lang="fr"><span class="tag">Prononciation</span>Wa toumîtoul-adhâ &#x27;anit-tarîqi sadaqah</p>
+    <p class="fr" lang="fr"><span class="tag">Français</span>Écarter de la route ce qui peut gêner les gens est une aumône.</p>
+    <p class="refs"><span class="tag">Référence</span><span class="ref">Bukhari 2989</span><span class="ref">Muslim 1009</span></p>
+    <p class="off"><span class="tag">Traduction officielle</span><a href="https://hadeethenc.com/fr/browse/hadith/4568" target="_blank" rel="noopener">Voir en français</a></p>
+    <p class="grade"><span class="tag">Authenticité</span>Sahih — Bukhari et Muslim</p>
+  </article>
+  <article class="hadith c2">
+    <div class="num" aria-hidden="true">11</div>
+    <p class="ar" lang="ar" dir="rtl">يَسِّرُوا وَلَا تُعَسِّرُوا، وَبَشِّرُوا وَلَا تُنَفِّرُوا</p>
+    <p class="ph" lang="fr"><span class="tag">Prononciation</span>Yassirû wa lâ tou&#x27;assirû, wa bashshirû wa lâ tounaffirû</p>
+    <p class="fr" lang="fr"><span class="tag">Français</span>Facilitez et ne compliquez pas ; annoncez de bonnes nouvelles et ne faites pas fuir les gens.</p>
+    <p class="refs"><span class="tag">Référence</span><span class="ref">Bukhari 69</span><span class="ref">Muslim 1734 (variante)</span></p>
+    <p class="off"><span class="tag">Traduction officielle</span><a href="https://hadeethenc.com/fr/browse/hadith/5866" target="_blank" rel="noopener">Voir en français</a></p>
+    <p class="grade"><span class="tag">Authenticité</span>Sahih — Bukhari et Muslim</p>
+  </article>
+  <article class="hadith c3">
+    <div class="num" aria-hidden="true">12</div>
+    <p class="ar" lang="ar" dir="rtl">كُلُّ مَعْرُوفٍ صَدَقَةٌ</p>
+    <p class="ph" lang="fr"><span class="tag">Prononciation</span>Koullou ma&#x27;roûfin sadaqah</p>
+    <p class="fr" lang="fr"><span class="tag">Français</span>Tout acte de bien est une aumône.</p>
+    <p class="refs"><span class="tag">Référence</span><span class="ref">Bukhari 6021</span><span class="ref">Muslim 1005</span></p>
+    <p class="off"><span class="tag">Traduction officielle</span><a href="https://hadeethenc.com/fr/browse/hadith/5346" target="_blank" rel="noopener">Voir en français</a></p>
+    <p class="grade"><span class="tag">Authenticité</span>Sahih — Bukhari et Muslim</p>
+  </article>
+  <article class="hadith c0">
+    <div class="num" aria-hidden="true">13</div>
+    <p class="ar" lang="ar" dir="rtl">أَفْشُوا السَّلَامَ بَيْنَكُمْ</p>
+    <p class="ph" lang="fr"><span class="tag">Prononciation</span>Afshoûs-salâma baynakoum</p>
+    <p class="fr" lang="fr"><span class="tag">Français</span>Répandez le salut (« salam ») entre vous.</p>
+    <p class="refs"><span class="tag">Référence</span><span class="ref">Muslim 54</span></p>
+    <p class="off"><span class="tag">Traduction officielle</span><a href="https://hadeethenc.com/fr/browse/hadith/3361" target="_blank" rel="noopener">Voir en français</a></p>
+    <p class="grade"><span class="tag">Authenticité</span>Sahih — Muslim</p>
+  </article>
+  <article class="hadith c1">
+    <div class="num" aria-hidden="true">14</div>
+    <p class="ar" lang="ar" dir="rtl">يَا غُلَامُ، سَمِّ اللَّهَ، وَكُلْ بِيَمِينِكَ، وَكُلْ مِمَّا يَلِيكَ</p>
+    <p class="ph" lang="fr"><span class="tag">Prononciation</span>Yâ ghoulâm, sammillâh, wa koul bi-yamînik, wa koul mimmâ yalîk</p>
+    <p class="fr" lang="fr"><span class="tag">Français</span>Mon garçon, dis Bismillah, mange avec ta main droite et mange ce qui est devant toi.</p>
+    <p class="refs"><span class="tag">Référence</span><span class="ref">Bukhari 5376</span><span class="ref">Muslim 2022</span></p>
+    <p class="off"><span class="tag">Traduction officielle</span><a href="https://hadeethenc.com/fr/browse/hadith/58120" target="_blank" rel="noopener">Voir en français</a></p>
+    <p class="grade"><span class="tag">Authenticité</span>Sahih — Bukhari et Muslim</p>
+  </article>
+  <article class="hadith c2">
+    <div class="num" aria-hidden="true">15</div>
+    <p class="ar" lang="ar" dir="rtl">تَبَسُّمُكَ فِي وَجْهِ أَخِيكَ لَكَ صَدَقَةٌ</p>
+    <p class="ph" lang="fr"><span class="tag">Prononciation</span>Tabassoumouka fî wajhi akhîka laka sadaqah</p>
+    <p class="fr" lang="fr"><span class="tag">Français</span>Ton sourire au visage de ton frère est une aumône pour toi.</p>
+    <p class="refs"><span class="tag">Référence</span><span class="ref">Tirmidhi 1956</span></p>
+    <p class="off"><span class="tag">Traduction officielle</span><a href="https://hadeethenc.com/fr" target="_blank" rel="noopener">Encyclopédie (FR)</a></p>
+    <p class="grade weak"><span class="tag">Authenticité</span>Hasan gharib selon at-Tirmidhi ; sahih selon al-Albani</p>
+  </article>
+  <article class="hadith c3">
+    <div class="num" aria-hidden="true">16</div>
+    <p class="ar" lang="ar" dir="rtl">خَيْرُكُمْ خَيْرُكُمْ لِأَهْلِهِ</p>
+    <p class="ph" lang="fr"><span class="tag">Prononciation</span>Khayroukoum khayroukoum li-ahlih</p>
+    <p class="fr" lang="fr"><span class="tag">Français</span>Le meilleur d&#x27;entre vous est le meilleur envers sa famille.</p>
+    <p class="refs"><span class="tag">Référence</span><span class="ref">Tirmidhi 3895</span><span class="ref">Ibn Majah 1977</span></p>
+    <p class="off"><span class="tag">Traduction officielle</span><a href="https://hadeethenc.com/fr" target="_blank" rel="noopener">Encyclopédie (FR)</a></p>
+    <p class="grade"><span class="tag">Authenticité</span>Hasan sahih selon at-Tirmidhi ; sahih selon al-Albani</p>
+  </article>
+  <article class="hadith c0">
+    <div class="num" aria-hidden="true">17</div>
+    <p class="ar" lang="ar" dir="rtl">مَنْ لَا يَشْكُرُ النَّاسَ لَا يَشْكُرُ اللَّهَ</p>
+    <p class="ph" lang="fr"><span class="tag">Prononciation</span>Man lâ yashkouroun-nâsa lâ yashkouroullâh</p>
+    <p class="fr" lang="fr"><span class="tag">Français</span>Celui qui ne remercie pas les gens ne remercie pas Allah.</p>
+    <p class="refs"><span class="tag">Référence</span><span class="ref">Abu Dawud 4811</span><span class="ref">Tirmidhi 1954</span></p>
+    <p class="off"><span class="tag">Traduction officielle</span><a href="https://hadeethenc.com/fr/browse/hadith/66255" target="_blank" rel="noopener">Voir en français</a></p>
+    <p class="grade"><span class="tag">Authenticité</span>Hasan sahih selon at-Tirmidhi ; sahih selon al-Albani</p>
+  </article>
+  <article class="hadith c1">
+    <div class="num" aria-hidden="true">18</div>
+    <p class="ar" lang="ar" dir="rtl">مِنْ حُسْنِ إِسْلَامِ الْمَرْءِ تَرْكُهُ مَا لَا يَعْنِيهِ</p>
+    <p class="ph" lang="fr"><span class="tag">Prononciation</span>Min housni islâmil-mar&#x27;i tarkouhou mâ lâ ya&#x27;nîh</p>
+    <p class="fr" lang="fr"><span class="tag">Français</span>Fait partie de la beauté de l&#x27;islam d&#x27;une personne qu&#x27;elle délaisse ce qui ne la concerne pas.</p>
+    <p class="refs"><span class="tag">Référence</span><span class="ref">Tirmidhi 2317</span><span class="ref">Ibn Majah 3976</span></p>
+    <p class="off"><span class="tag">Traduction officielle</span><a href="https://hadeethenc.com/fr" target="_blank" rel="noopener">Encyclopédie (FR)</a></p>
+    <p class="grade weak"><span class="tag">Authenticité</span>Débattu : sahih selon al-Albani, jugé faible par d&#x27;autres savants</p>
+  </article>
+  <article class="hadith c2">
+    <div class="num" aria-hidden="true">19</div>
+    <p class="ar" lang="ar" dir="rtl">الْيَدُ الْعُلْيَا خَيْرٌ مِنَ الْيَدِ السُّفْلَى</p>
+    <p class="ph" lang="fr"><span class="tag">Prononciation</span>Al-yadou-l-&#x27;ouliyâ khayroun minal-yadis-soufla</p>
+    <p class="fr" lang="fr"><span class="tag">Français</span>La main du haut (celle qui donne) vaut mieux que la main du bas (celle qui demande).</p>
+    <p class="refs"><span class="tag">Référence</span><span class="ref">Bukhari 1429</span><span class="ref">Muslim 1033</span></p>
+    <p class="off"><span class="tag">Traduction officielle</span><a href="https://hadeethenc.com/fr/browse/hadith/3599" target="_blank" rel="noopener">Voir en français</a></p>
+    <p class="grade"><span class="tag">Authenticité</span>Sahih — Bukhari et Muslim</p>
+  </article>
+  <article class="hadith c3">
+    <div class="num" aria-hidden="true">20</div>
+    <p class="ar" lang="ar" dir="rtl">احْفَظِ اللَّهَ يَحْفَظْكَ، احْفَظِ اللَّهَ تَجِدْهُ تُجَاهَكَ</p>
+    <p class="ph" lang="fr"><span class="tag">Prononciation</span>Ihfadhillâha yahfadhk, ihfadhillâha tajidhou toujâhak</p>
+    <p class="fr" lang="fr"><span class="tag">Français</span>Préserve Allah, Il te préservera ; préserve Allah, tu Le trouveras devant toi.</p>
+    <p class="refs"><span class="tag">Référence</span><span class="ref">Tirmidhi 2516</span></p>
+    <p class="off"><span class="tag">Traduction officielle</span><a href="https://hadeethenc.com/fr/browse/hadith/4811" target="_blank" rel="noopener">Voir en français</a></p>
+    <p class="grade"><span class="tag">Authenticité</span>Hasan sahih selon at-Tirmidhi ; sahih selon al-Albani</p>
+  </article>
+</main>
+<footer>
+  Références contrôlées sur sunnah.com, hadeethenc.com et d'autres sites de hadith. La traduction française est une traduction libre : comparez-la avec la traduction officielle de l'Encyclopédie des Hadiths prophétiques (hadeethenc.com), dont le lien figure sous chaque hadith.
+</footer>
+</body>
+</html>
