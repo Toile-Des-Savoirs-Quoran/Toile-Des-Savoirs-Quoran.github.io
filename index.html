@@ -569,24 +569,27 @@
     </footer>
 
 
-    <!-- GOATCOUNTER : enregistre la visite (remplacer "toiledessavoirs" par votre code) -->
-    <script data-goatcounter="https://toiledessavoirs.goatcounter.com/count"
+    <!-- GOATCOUNTER : enregistre la visite (remplacer VOTRECODE par votre code GoatCounter) -->
+    <script data-goatcounter="https://VOTRECODE.goatcounter.com/count"
             async src="//gc.zgo.at/count.js"></script>
 
-    <!-- GOATCOUNTER : affiche le nombre de visites -->
+    <!-- GOATCOUNTER : affiche le nombre total de visites du site -->
     <script>
         window.addEventListener('load', function () {
             setTimeout(function () {
-                fetch('https://toiledessavoirs.goatcounter.com/counter/' +
-                      encodeURIComponent(location.pathname) + '.json')
-                    .then(function (r) { return r.json(); })
+                fetch('https://VOTRECODE.goatcounter.com/counter/TOTAL.json')
+                    .then(function (r) {
+                        if (!r.ok) throw new Error('HTTP ' + r.status);
+                        return r.json();
+                    })
                     .then(function (d) {
                         document.getElementById('visites').textContent = d.count;
                     })
-                    .catch(function () {
+                    .catch(function (e) {
+                        console.log('Compteur GoatCounter :', e);
                         document.getElementById('visites').textContent = '—';
                     });
-            }, 1000);
+            }, 1500);
         });
     </script>
 
