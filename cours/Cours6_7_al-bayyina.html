@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sixième unité – Sourate Al-Bayyina</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Amiri:wght@400;700&display=swap">
+<style>
+:root{--bg:#f4f2ea;--card:#fff;--text:#2b2b2b;--muted:#6b6b6b;--line:#d9d4c4;--acc:#1f9e89;--hl:#c4462f;
+--r6:#8e1b3b;--r4:#d6336c;--o:#e5533d;--y:#f0902e;--g:#2e9a3c;--s:#9a9a9a;--t:#1d5a7a;--q:#1e90e0;color-scheme:light}
+@media (prefers-color-scheme:dark){:root{--bg:#1d1d1b;--card:#272725;--text:#eeeae0;--muted:#a8a496;--line:#47453d;--acc:#3fcdb6;--hl:#ff8a6b;
+--r6:#d0587a;--r4:#ff6a95;--o:#ff7a5c;--y:#ffb04d;--g:#5ad66a;--s:#8d8d8d;--t:#5fb6d9;--q:#4db3ff;color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;padding:20px 14px 40px;background:var(--bg);color:var(--text);font-family:Georgia,serif;line-height:1.55}
+main{max-width:760px;margin:0 auto}
+a.back{color:var(--acc);text-decoration:none;font-size:.9rem}
+h1{margin:8px 0 2px;font-weight:normal;font-size:1.7rem}
+.sub{color:var(--muted);margin:0 0 18px;letter-spacing:.08em;text-transform:uppercase;font-size:.8rem}
+section{background:var(--card);border-radius:8px;border-left:8px solid var(--acc);padding:6px 18px 14px;margin-bottom:18px;box-shadow:0 1px 3px rgba(0,0,0,.12)}
+h2{font-size:1.15rem;margin:12px 0 4px;color:var(--acc);font-variant:small-caps;letter-spacing:.05em}
+h2 small{color:var(--muted);font-weight:normal;font-size:.8rem;letter-spacing:0}
+h3{font-size:1rem;margin:16px 0 4px;color:var(--hl);font-weight:normal;letter-spacing:.08em}
+p{margin:6px 0}
+ul{list-style:none;padding:0;margin:4px 0}
+li{padding-left:22px;position:relative;margin:5px 0}
+li::before{content:"▣";position:absolute;left:0;color:var(--acc);font-size:.8rem;top:.2em}
+.v{border-left:4px solid var(--acc);padding-left:10px;margin:8px 0}
+.v b{color:var(--hl);font-weight:normal}
+.ar{font-family:"Amiri Quran","Amiri","Scheherazade New","Traditional Arabic",serif;direction:rtl;text-align:center;font-size:1.7rem;line-height:2.3}
+.ar.sm{font-size:1.35rem;line-height:2}
+.ar i{font-style:normal}
+i.r6{color:var(--r6)}i.r4{color:var(--r4)}i.o{color:var(--o)}i.y{color:inherit}i.g{color:var(--g)}i.s{color:var(--s)}i.t{color:var(--t)}i.q{color:var(--q)}
+i.n{display:inline-block;color:var(--hl);font-size:1rem;border:1.5px solid var(--hl);border-radius:50%;min-width:1.7em;height:1.7em;line-height:1.6em;text-align:center;margin:0 4px;font-family:Amiri,serif}
+.leg{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:4px 12px;font-size:.85rem}
+.arl{font-family:"Amiri",serif;font-weight:normal;direction:rtl;display:block;font-size:1.05rem}
+.leg span::before{content:"●";margin-right:6px}
+.leg .l1::before{color:var(--r6)}.leg .l2::before{color:var(--r4)}.leg .l3::before{color:var(--o)}.leg .l4::before{color:var(--y)}.leg .l5::before{color:var(--g)}.leg .l6::before{color:var(--s)}.leg .l7::before{color:var(--t)}.leg .l8::before{color:var(--q)}
+.ref{color:var(--muted);font-size:.85rem}
+.tbd{color:var(--muted);font-style:italic}
+.opts{display:flex;flex-wrap:wrap;gap:8px;margin:4px 0 10px}
+.opts span{border:1px solid var(--line);padding:6px 12px;border-radius:4px}
+.lines p{border-bottom:1px dotted var(--muted);height:1.9em;margin:4px 0}
+.lines p::before{content:"⊙ ";color:var(--acc)}
+table{width:100%;border-collapse:collapse;margin:8px 0}
+td,th{border:1px solid var(--line);padding:8px;height:2.4em;text-align:center;font-weight:normal}
+.mots{text-align:center;color:var(--muted)}
+.pres{background:var(--bg);border-radius:6px;padding:6px 12px;margin:8px 0}
+.verse{border-top:1px solid var(--line);padding:6px 0 10px;margin-top:10px}
+.vl{margin:0;color:var(--hl);letter-spacing:.1em;text-transform:uppercase;font-size:.8rem}
+.verse .ar{font-size:1.6rem;line-height:2.2}
+.fr{border-left:4px solid var(--acc);padding-left:10px;margin:4px 0 8px}
+.fr b{color:var(--hl);font-weight:normal}
+.expl{background:var(--bg);border-left:4px solid var(--hl);border-radius:6px;padding:4px 14px 8px}
+.expl h4{margin:4px 0;color:var(--hl);font-weight:normal;letter-spacing:.1em;text-transform:uppercase;font-size:.8rem}
+.expl li::before{color:var(--hl)}
+.key{background:var(--card);border-radius:6px;padding:8px 12px;font-weight:bold}
+section.moeurs{--acc:#c2398a;--hl:#c2398a;background:color-mix(in srgb,#c2398a 8%,var(--card))}
+@media (prefers-color-scheme:dark){section.moeurs{--acc:#ff7ac0;--hl:#ff7ac0}}
+html{scroll-behavior:smooth}
+section,.verse{scroll-margin-top:12px}
+.toc{background:var(--card);border-radius:8px;border-left:8px solid var(--hl);padding:4px 18px 10px;margin-bottom:18px;box-shadow:0 1px 3px rgba(0,0,0,.12)}
+.toc h2{color:var(--hl)}
+.toc a{color:var(--acc)}
+</style>
+</head>
+<body>
+<main>
+<a class="back" href="sommaire.html">← Sommaire</a>
+<h1>Sourate Al-Bayyina (la preuve)</h1>
+<p class="sub">Sixième unité</p>
+
+<nav class="toc"><h2>Sommaire</h2>
+<ul>
+<li><b>Cours 6 :</b> Al-Bayyina du verset 1 au verset 5 (<a href="#v1">voir</a>) + Mœurs islamiques « Souhaiter du bien aux autres » (<a href="#moeurs">voir</a>)</li>
+<li><b>Cours 7 :</b> Al-Bayyina du verset 6 au verset 8 (<a href="#v6">voir</a>) + Culte – Salat (<a href="#culte">voir</a>)</li>
+<li><b>Révision et évaluations</b> (<a href="#revision">voir</a>)</li>
+</ul></nav>
+
+<section>
+<h2>Texte coranique avec tajwid et explications</h2>
+<p class="pres"><b>Sourate n° 98</b> · 8 versets · révélée à Médine</p>
+<div class="leg">
+<span class="l1"><b class="arl">مدّ ٦ حركات لزومًا</b> Madd lazim : 6 mouvements</span>
+<span class="l2"><b class="arl">مدّ واجب ٤ أو ٥ حركات</b> Madd wajib : 4 ou 5 mouvements</span>
+<span class="l3"><b class="arl">مدّ ٢ أو ٤ أو ٦ جوازًا</b> Madd jaiz : 2, 4 ou 6 mouvements</span>
+<span class="l5"><b class="arl">إخفاء ومواقع الغنّة (حركتان)</b> Ikhfa et ghunna : 2 mouvements</span>
+<span class="l6"><b class="arl">إدغام وما لا يُلفظ</b> Idgham et lettres non prononcées</span>
+<span class="l7"><b class="arl">تفخيم</b> Tafkhim (lettres emphatiques)</span>
+<span class="l8"><b class="arl">قلقلة</b> Qalqala (écho)</span></div>
+<div class="verse"><p class="vl">Basmala</p><div class="ar">بِسْمِ <i class="s">ٱ</i>للَّهِ <i class="s">ٱل</i><i class="t">رَّ</i>حْمَٰنِ <i class="s">ٱل</i><i class="t">رَّ</i>حِيمِ</div><div class="fr">Au nom de Dieu, le Clément, le Miséricordieux</div></div>
+<div class="verse" id="v1"><p class="vl">Verset 1</p><div class="ar">لَمْ يَكُنِ <i class="s">ٱ</i>لَّذِينَ كَفَ<i class="t">رُ</i>و<i class="s">ا۟</i> مِنْ أَهْلِ ٱلْكِتَٰبِ وَٱلْمُشْرِكِينَ مُ<i class="g">نْ</i>فَكِّينَ حَتَّىٰ تَأْتِيَهُمُ ٱلْبَيِّنَةُ <i class="n">١</i></div><div class="fr"><b>[1]</b> Les mécréants parmi les gens du Livre ainsi que les associationnistes n’entendaient pas renoncer à leurs croyances tant qu’ils n’avaient pas reçu la Preuve évidente :</div><div class="expl"><h4>Explication</h4><ul><li>Une preuve évidente a été mentionnée et décrite dans les livres précédents révélés par Allah.</li><li>Les gens du Livre attendaient ensemble l’arrivée de cette preuve.</li></ul></div></div>
+<div class="verse"><p class="vl">Versets 2 et 3</p><div class="ar"><i class="t">رَ</i>سُو<i class="g">لٌ</i> <i class="g">مِّ</i>نَ <i class="s">ٱل</i><i class="t">لَّ</i>هِ يَتْلُو<i class="s">ا۟</i> <i class="t">صُ</i>حُ<i class="g">فًا</i> <i class="g">مُّ</i><i class="t">طَ</i>هَّ<i class="t">رَ</i>ةً <i class="n">٢</i></div><div class="ar">فِيهَا كُتُ<i class="g">بٌ</i> <i class="t">قَ</i>يِّمَةٌ <i class="n">٣</i></div><div class="fr"><b>[2]</b> Un Messager de la part de Dieu, qui leur récite des feuillets purifiés,<br><b>[3]</b> Contenant des écrits d’une parfaite rectitude.</div><div class="expl"><h4>Explication</h4><ul><li>La preuve est le Prophète ﷺ (prière et salut sur lui), ainsi que le Coran qui lui a été révélé.</li><li>Ils guident tous les deux vers le droit chemin.</li></ul></div></div>
+<div class="verse"><p class="vl">Verset 4</p><div class="ar">وَمَا تَفَ<i class="t">رَّ</i><i class="t">قَ</i> <i class="s">ٱ</i>لَّذِينَ أُوتُو<i class="s">ا۟</i> ٱلْكِتَٰبَ إِلَّا مِ<i class="s">نۢ</i> بَعْدِ مَا جَ<i class="r4">آ</i>ءَتْهُمُ ٱلْبَيِّنَةُ <i class="n">٤</i></div><div class="fr"><b>[4]</b> Or, ceux qui ont reçu le Livre ne se sont divisés qu’après que la preuve leur fut venue.</div><div class="expl"><h4>Explication</h4><ul><li>Ensuite, lorsqu’ils ont reçu la preuve tant attendue, ils se sont dispersés.</li><li>Entre croyants et non-croyants (ceux qui n’ont pas suivi le Prophète).</li><li>Et cela malgré le fait que la preuve était évidente.</li></ul></div></div>
+<div class="verse"><p class="vl">Verset 5</p><div class="ar">وَمَ<i class="o">آ</i> أُمِ<i class="t">رُ</i><i class="o">وٓ</i><i class="s">ا۟</i> إِلَّا لِيَعْبُدُو<i class="s">ا۟</i> <i class="s">ٱل</i><i class="t">لَّ</i>هَ مُ<i class="t">خْ</i>لِ<i class="t">صِ</i>ينَ لَهُ <i class="s">ٱل</i>دِّينَ حُنَفَ<i class="r4">آ</i>ءَ وَيُ<i class="t">قِ</i>يمُو<i class="s">ا۟</i> <i class="s">ٱل</i><i class="t">صَّ</i>لَوٰةَ وَيُؤْتُو<i class="s">ا۟</i> <i class="s">ٱل</i>زَّكَوٰةَ ۚ وَذَٰلِكَ دِينُ ٱلْ<i class="t">قَ</i>يِّمَةِ <i class="n">٥</i></div><div class="fr"><b>[5]</b> Pourtant, il ne leur a été ordonné que d’adorer Dieu, Lui vouant un culte exclusif, en monothéistes purs, d’accomplir la Prière (Salat) et de s’acquitter de l’Aumône obligatoire (Zakat), car telle est la religion de la droiture.</div><div class="expl"><h4>Explication</h4><ul><li>Et pourtant, rien de nouveau ne leur a été demandé par rapport à leurs livres.</li><li>Croire en Allah, ne rien Lui associer et L’adorer Lui seul.</li><li>C’est l’<b>Islam</b>, le message de tous les livres.</li></ul></div></div>
+<div class="verse" id="v6"><p class="vl">Verset 6</p><div class="ar">إِ<i class="g">نَّ</i> <i class="s">ٱ</i>لَّذِينَ كَفَ<i class="t">رُ</i>و<i class="s">ا۟</i> مِنْ أَهْلِ ٱلْكِتَٰبِ وَٱلْمُشْرِكِينَ فِى نَارِ جَهَ<i class="g">نَّ</i>مَ <i class="t">خَٰ</i>لِدِينَ فِيهَ<i class="o">آ</i> أُو۟لَٰ<i class="r4">ٓ</i>ئِكَ هُمْ شَ<i class="t">رُّ</i> ٱلْبَرِيَّةِ <i class="n">٦</i></div><div class="fr"><b>[6]</b> En vérité, les mécréants parmi les gens du Livre ainsi que les associationnistes seront dans le feu de Jahannam, pour y demeurer éternellement. De toutes les créatures, ce sont eux les pires.</div><div class="expl"><h4>Explication</h4><ul><li>Ceux qui ont refusé la foi malgré la preuve évidente méritent le châtiment.</li><li>Ce sont les pires, car ils avaient la science et l’ont refusée par orgueil et vanité.</li></ul></div></div>
+<div class="verse"><p class="vl">Verset 7</p><div class="ar">إِ<i class="g">نَّ</i> <i class="s">ٱ</i>لَّذِينَ ءَامَنُو<i class="s">ا۟</i> وَعَمِلُو<i class="s">ا۟</i> <i class="s">ٱل</i><i class="t">صَّٰ</i>لِحَٰتِ أُو۟لَٰ<i class="r4">ٓ</i>ئِكَ هُمْ <i class="t">خَ</i>يْ<i class="t">رُ</i> ٱلْبَرِيَّةِ <i class="n">٧</i></div><div class="fr"><b>[7]</b> Quant à ceux qui croient et accomplissent les bonnes œuvres, ce sont ceux-là les meilleurs de toute la Création.</div><div class="expl"><h4>Explication</h4><ul><li><b>Dans le cas contraire :</b> Allah est très Juste. Il révèle les preuves, puis laisse le choix à chacun de nous.</li><li>Ceux qui ont cru et adoré Allah sont alors les meilleurs auprès d’Allah.</li></ul><p class="key">⇒ Allah nous a donné le choix, avec un cerveau et un cœur. Il nous a donné toutes les preuves nécessaires pour suivre le droit chemin : un Prophète, un Coran. Nous avons tous le libre arbitre de choisir.</p></div></div>
+<div class="verse"><p class="vl">Verset 8</p><div class="ar">جَزَ<i class="r4">آ</i>ؤُهُمْ عِ<i class="g">نْ</i>دَ <i class="t">رَ</i>بِّهِمْ جَ<i class="g">نَّٰ</i>تُ عَ<i class="q">دْ</i><i class="g">نٍ</i> تَ<i class="q">جْ</i>رِى مِ<i class="g">ن</i> تَحْتِهَا ٱلْأَنْهَٰ<i class="t">رُ</i> <i class="t">خَٰ</i>لِدِينَ فِيهَ<i class="o">آ</i> أَبَدًا ۖ <i class="t">رَّ</i><i class="t">ضِ</i>ىَ <i class="s">ٱل</i><i class="t">لَّ</i>هُ عَنْهُمْ وَ<i class="t">رَ</i><i class="t">ضُ</i>و<i class="s">ا۟</i> عَنْهُ ۚ ذَٰلِكَ لِمَن <i class="t">خَ</i>شِىَ <i class="t">رَ</i>بَّهُۥ <i class="n">٨</i></div><div class="fr"><b>[8]</b> Leur récompense auprès de leur Seigneur sera les Jardins d’Éden, où coulent des ruisseaux et où ils demeureront éternellement. Dieu sera satisfait d’eux, puisqu’ils étaient satisfaits de Lui. Telle sera [la récompense] de celui qui aura craint son Seigneur.</div><div class="expl"><h4>Explication</h4><ul><li>En plus d’être Juste, Allah est extrêmement Généreux : Il offre des récompenses inestimables aux croyants.</li><li>Des paradis avec des ruisseaux, pour une vie éternelle et sans aucun mal, auprès de Mohammed ﷺ.</li></ul></div></div>
+</section>
+
+<section>
+<h2>Au cœur du Coran <small>– Al-Bayyina (la Preuve)</small></h2>
+<p><i>Au nom de Dieu, le Clément, le Miséricordieux</i></p>
+
+<h3>Versets 1 à 4</h3>
+<p><b>Je retiens</b></p>
+<div class="v">
+<p><b>[1]</b> Les mécréants parmi les gens du Livre ainsi que les associationnistes n’entendaient pas renoncer à leurs croyances tant qu’ils n’avaient pas reçu la Preuve évidente :</p>
+<p><b>[2]</b> Un Messager de la part de Dieu, qui leur récite des feuillets purifiés,</p>
+<p><b>[3]</b> Contenant des écrits d’une parfaite rectitude.</p>
+<p><b>[4]</b> Or, ceux qui ont reçu le Livre ne se sont divisés qu’après que la preuve leur fut venue.</p></div>
+<p><b>Je comprends le vocabulaire</b></p>
+<ul>
+<li><b>Les gens du Livre :</b> Les juifs et les chrétiens. Les Livres qui leur ont été destinés sont la Torah et l’Évangile.</li>
+<li><b>Les associationnistes :</b> Ceux qui associaient des divinités à Dieu, les idolâtres, les polythéistes.</li>
+<li><b>La Preuve évidente :</b> Un Messager envoyé par Dieu leur transmettant la Révélation.</li></ul>
+<p><b>Je comprends le sens des versets</b></p>
+<ul>
+<li>Les mécréants parmi les gens du Livre et les associationnistes déclaraient qu’ils n’allaient délaisser leur religion que si Dieu leur envoyait un Messager.</li>
+<li>Les gens du Livre et les idolâtres se sont divisés quand le Messager de Dieu les a appelés à embrasser l’Islam.</li>
+<li>Certains ont cru en son Message, d’autres non.</li></ul>
+<p><b>J’enrichis mes connaissances</b></p>
+<div class="ar sm">مُحَمَّدٌ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ رَسُولٌ مِنَ اللهِ لِلنَّاسِ جَمِيعًا.</div>
+<p>Mohamed ﷺ est un Messager que Dieu a envoyé à l’humanité tout entière.</p>
+
+<h3>Verset 5</h3>
+<p><b>Je retiens</b></p>
+<div class="v"><p><b>[5]</b> Pourtant, il ne leur a été ordonné que d’adorer Dieu, Lui vouant un culte exclusif, en monothéistes purs, d’accomplir la Prière (Salat) et de s’acquitter de l’Aumône obligatoire (Zakat), car telle est la religion de la droiture.</p></div>
+<p><b>Je comprends le vocabulaire</b></p>
+<ul>
+<li><b>En monothéistes purs :</b> En tant que croyants qui n’associent rien à Dieu et n’adorent que Lui, fidèles aux enseignements du Prophète Abraham (Ibrahim).</li>
+<li><b>La religion de la droiture :</b> La vraie religion, l’Islam.</li></ul>
+<p><b>J’apprends</b> – Je suis musulman ; j’adore Dieu :</p>
+<ul><li>je fais la Prière (Salat),</li><li>je m’acquitte de l’Aumône obligatoire (Zakat),</li><li>j’accomplis les bonnes œuvres.</li></ul>
+<p><b>J’enrichis mes connaissances</b></p>
+<div class="ar sm">قَالَ اللَّهُ تَعَالَىٰ: ﴿وَلَقَدْ بَعَثْنَا فِي كُلِّ أُمَّةٍ رَسُولًا أَنِ اعْبُدُوا اللَّهَ﴾ <span class="ref">(النحل – 36)</span></div>
+<p>Dieu (<i>Gloire à Lui</i>) a dit : <b>Nous avons effectivement envoyé à chaque communauté un Prophète [avec le message suivant] : « Adorez Dieu ! »</b> <span class="ref">Coran, sourate n° 16, verset n° 36</span></p>
+
+<h3>Versets 6 à 8</h3>
+<p><b>Je retiens</b></p>
+<div class="v">
+<p><b>[6]</b> En vérité, les mécréants parmi les gens du Livre ainsi que les associationnistes seront dans le feu de Jahannam, pour y demeurer éternellement. De toutes les créatures, ce sont eux les pires.</p>
+<p><b>[7]</b> Quant à ceux qui croient et accomplissent les bonnes œuvres, ce sont ceux-là les meilleurs de toute la Création.</p>
+<p><b>[8]</b> Leur récompense auprès de leur Seigneur sera les Jardins d’Éden, où coulent des ruisseaux et où ils demeureront éternellement. Dieu sera satisfait d’eux, puisqu’ils étaient satisfaits de Lui. Telle sera [la récompense] de celui qui aura craint son Seigneur.</p></div>
+<p><b>Je comprends le vocabulaire</b></p>
+<ul>
+<li><b>Jahannam :</b> Un des noms de l’Enfer.</li>
+<li><b>Les Jardins d’Éden :</b> Les jardins du Paradis. Des jardins qui seront leur lieu de séjour éternel au Paradis.</li>
+<li><b>Celui qui aura craint son Seigneur :</b> Craindre Dieu consiste à L’adorer avec amour et dévotion.</li></ul>
+<p><b>Je comprends le sens des versets</b></p>
+<ul>
+<li>Les mécréants sont les pires créatures ; ils demeureront à jamais en Enfer.</li>
+<li>Les croyants qui accomplissent les bonnes œuvres sont les meilleurs ; ils iront au paradis.</li>
+<li>Les croyants ont obéi à Dieu ; Il sera satisfait d’eux.</li>
+<li>Dieu récompensera les croyants en leur accordant le séjour au Paradis. Ils seront donc heureux de cette récompense.</li></ul>
+<p><b>J’apprends</b> – J’adore Dieu et je lui voue une crainte révérencielle, pour qu’Il soit satisfait de moi et me fasse entrer au Paradis.</p>
+<p><b>J’enrichis mes connaissances</b></p>
+<div class="ar sm">قَالَ اللَّهُ تَعَالَىٰ: ﴿إِنَّ الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ كَانَتْ لَهُمْ جَنَّاتُ الْفِرْدَوْسِ نُزُلًا﴾ <span class="ref">(الكهف – 107)</span></div>
+<p>Dieu (<i>Gloire à Lui</i>) a dit : <b>Ceux qui croient et font de bonnes œuvres, séjourneront dans les jardins du Paradis</b> <span class="ref">Coran, sourate n° 18, verset n° 107</span></p>
+</section>
+
+<section class="moeurs" id="moeurs">
+<h2>Mœurs islamiques <small>– Souhaiter du bien aux autres</small></h2>
+<p><b>Je retiens</b></p>
+<div class="ar sm">قَالَ رَسُولُ اللهِ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ: «لَا يُؤْمِنُ أَحَدُكُمْ حَتَّى يُحِبَّ لِأَخِيهِ مَا يُحِبُّ لِنَفْسِهِ»</div>
+<p>Le Messager de Dieu ﷺ a dit : <b>Aucun d’entre vous ne sera [vraiment] croyant que lorsqu’il souhaitera pour son frère ce qu’il souhaite pour sa propre personne.</b></p>
+<p><b>Je comprends</b> – Je suis croyant :</p>
+<ul><li>J’aime Dieu et Son Messager ﷺ.</li><li>Je souhaite du bien pour moi et pour les autres.</li></ul>
+<p><b>J’apprends</b> – Je souhaite pour moi et pour les autres :</p>
+<ul><li>Que nous soyons de bons musulmans, serviables aux gens.</li><li>Que nous soyons en bonne santé.</li><li>Que nous vivions dans le bonheur et la paix.</li><li>Que nous réussissions dans nos études.</li><li>Que nous accédions au Paradis.</li></ul>
+<p><b>J’enrichis mes connaissances</b></p>
+<div class="ar sm">قَالَ اللَّهُ تَعَالَىٰ: ﴿وَأَحْسِنُوا إِنَّ اللَّهَ يُحِبُّ الْمُحْسِنِينَ﴾ <span class="ref">(البقرة – 195)</span></div>
+<p>Dieu (<i>Gloire à Lui</i>) a dit : <b>Faites le bien, car Dieu aime les bienfaisants</b> <span class="ref">Coran, sourate n° 2, verset n° 195</span></p>
+</section>
+
+<section id="culte">
+<h2>Culte <small>– La Prière (Salat)</small></h2>
+<div class="ar sm">قَالَ اللَّهُ تَعَالَىٰ: ﴿وَأَقِمِ الصَّلَاةَ إِنَّ الصَّلَاةَ تَنْهَىٰ عَنِ الْفَحْشَاءِ وَالْمُنكَرِ﴾ <span class="ref">(العنكبوت – 45)</span></div>
+<p>Dieu (<i>Gloire à Lui</i>) a dit : <b>Accomplis la Prière, car la Prière préserve des turpitudes et des actes blâmables</b> <span class="ref">Coran, sourate n° 29, verset n° 45</span></p>
+<p><b>Je comprends</b></p>
+<ul><li>La Prière (Salat) est le deuxième pilier de l’Islam.</li><li>La Prière est obligatoire pour tout musulman pubère et doué de raison.</li><li>Le musulman accomplit la Prière en toute circonstance, même s’il est malade ou en voyage.</li></ul>
+<h3>Les conditions de la Prière</h3>
+<p>Quand je décide d’accomplir une Prière, je dois :</p>
+<ul><li>Attendre l’heure de la Prière.</li><li>Être propre et porter des vêtements propres.</li><li>Faire mes ablutions (Woudou).</li><li>Accomplir la Prière dans un endroit propre.</li><li>Me mettre face à la Qibla (direction de La Mecque).</li></ul>
+<h3>Les actes qui annulent la Prière</h3>
+<p>Pour que ma Prière soit valide, je ne dois pas :</p>
+<ul><li>Parler.</li><li>Rire.</li><li>Manger ou boire.</li><li>Répéter des gestes autres que ceux de la Prière.</li></ul>
+<p><b>J’apprends</b></p>
+<ul><li>La Prière m’apprend l’amour de la propreté.</li><li>La Prière m’enseigne que je dois organiser mon temps et avoir une bonne conduite.</li></ul>
+</section>
+
+<section id="revision">
+<h2>Révision et évaluation</h2>
+<h3>1 | Je choisis la bonne réponse et je barre celle qui est fausse</h3>
+<p>Les gens du Livre sont :</p><div class="opts"><span>les chrétiens</span><span>les juifs et les chrétiens</span></div>
+<p>Les associationnistes sont :</p><div class="opts"><span>ceux qui adorent les statues</span><span>ceux qui adorent Dieu</span></div>
+<p>Dieu récompense les croyants en les envoyant :</p><div class="opts"><span>au Paradis</span><span>en Enfer</span></div>
+<h3>2 | Je forme des phrases avec les mots suivants</h3>
+<p class="mots">La Prière – Dieu – Les croyants – Le Paradis</p>
+<div class="lines"><p></p><p></p><p></p><p></p></div>
+<h3>3 | Je mentionne trois bonnes choses que je souhaite pour moi et pour les autres</h3>
+<div class="lines"><p></p><p></p><p></p></div>
+<h3>4 | Je mets les mots suivants dans l’ordre pour retrouver le hadith</h3>
+<p class="mots">personne / croyant / pour sa / pour son / ce qu’il souhaite / ne sera / propre / vraiment / frère / d’entre vous / souhaitera / que lorsqu’il / aucun</p>
+<h3>5 | Je lis et je remplis le tableau suivant</h3>
+<p class="mots">Je suis propre et je porte des vêtements propres / Je parle / Je mange et je bois / Je fais la Prière dans un endroit propre / Je me mets face à la direction de La Mecque / Je ris</p>
+<table><tr><th>Conditions de la Prière</th><th>Actes qui annulent la Prière</th></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr></table>
+<h3>6 | Je barre les énoncés faux</h3>
+<p>Quand il était dans les bras de sa mère, Jésus a dit :</p>
+<ul><li>Je suis le serviteur de Dieu.</li><li>Dieu m’a ordonné d’être bon envers ma mère.</li><li>J’ai un père comme tous les enfants.</li><li>Je suis le dernier des Messagers.</li><li>Dieu m’a recommandé la Prière et l’Aumône.</li></ul>
+</section>
+</main>
+</body>
+</html>
